@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-1: black;
+    --cor-2: white;
+    --cor-3: #e53939;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+/* header */
+.navbar{
+    background-color: var(--cor-1);
+}
+#img-codigo-certo{
+    width: 100px;
+    height: 100px;
+    background: url(../img/codigo-certo-100px.png) center center no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    transition: .3s;
+}
+#img-codigo-certo:hover{
+    background-image: url(../img/codigo-certo-branco-100px.png);
+}
+.nav-link{
+    color: var(--cor-2);
+    font-size: 1.1em;
+    display: inline-block;
+    transition: 0,3s;
+}
+.nav-link:hover{
+    color: var(--cor-3);
+    border-bottom: 1px solid #e53939;
+}
+#menu{
+    font-size: 2em;
+    color: white;
+}
