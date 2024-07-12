@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="scroll" data-bs-spy="scroll" data-bs-target="#link-topo" data-bs-offset="0" tabindex="0">
             <div class="container-fluid conteudo-navbar mx-sm-4">
                 <div id="titulo" class="navbar-brand m-3 d-flex align-items-center">
                     <a href="https://www.codigocertocoders.com.br/" target="_blank">
@@ -28,13 +28,13 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item m-4">
-                            <a href="#" class="nav-link" aria-current="page">Quem sou</a>
+                            <a href="#quem-sou" class="nav-link" aria-current="page">Quem sou</a>
                         </li>
                         <li class="nav-item m-4">
-                            <a href="#" class="nav-link" aria-current="page">Gostos Pessoais</a>
+                            <a href="#container-gostos-pessoais" class="nav-link" aria-current="page">Gostos Pessoais</a>
                         </li>
                         <li class="nav-item m-4">
-                            <a href="#" class="nav-link" aria-current="page">Motivações</a>
+                            <a href="#motivações" class="nav-link" aria-current="page">Motivações</a>
                         </li>
                     </ul>
                 </div>
@@ -42,52 +42,59 @@
         </nav>
     </header> 
     <main>
-       <div class="container-fluid" id="quem-sou">
+       <div class="container-fluid container-seções" data-bs-spy="scroll" data-bs-target="#scroll" data-bs-offset="0" tabindex="0" id="quem-sou">
             <h2 class="sub-titulos text-center">Quem sou?</h2>
             <div class="row justify-content-center">
                 <div class="col-md-5 mb-md-0 mb-5 d-flex justify-content-center">
-                    <img src="img/minha-foto-200px.png" alt="minha foto">
+                    <img src="img/perfil-300px.jpg" alt="minha foto">
                 </div>
-                <div class="col-md-5 d-flex align-items-center">
-                    <p id="paragrafo-quem-sou">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusamus similique quod id provident molestias quo, eligendi eveniet harum repellendus, distinctio repellat? Est, quisquam possimus deleniti temporibus et tempore sit!</p>
+                <div class="col-md-5">
+                    <p class="paragrafo-quem-sou">Me chamo <span class="quem-sou-destaque">Adilson Neubaner</span> tenho 19 anos. Sou um estudante de desenvolvimento front-end em constante evolução, atualmente tenho domínio sobre as tecnologias: <span class="quem-sou-destaque">HTML</span>, <span class="quem-sou-destaque">CSS</span>, <span class="quem-sou-destaque">JavaScript</span>, <span class="quem-sou-destaque">Bootstrap</span> e <span class="quem-sou-destaque">React</span>.</p>
+                    <p class="paragrafo-quem-sou">Ao criar meus projetos tenho em mente sempre manter o comprometimento em criar soluções criativas e eficientes.</p>
                 </div>
             </div>
+            <div>
+                <ul id="redes" class="d-flex justify-content-center">
+                    <li class="m-5"><a href="https://github.com/Adilsonneubaner" target="_blank"><i class="bi bi-github"></i></a></li>
+                    <li class="m-5"><a href="https://www.linkedin.com/in/adilsonneubaner/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li class="m-5"><a href="https://www.instagram.com/juniorneubaner/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
        </div> 
-       <div id="plano-de-fundo">
-            <div id="container-gostos-pessoais">
-                <h2 class="sub-titulos text-center">Gostos Pessoais</h2>
-                <div id="container-conteudo">
-                    <div class="card">
-                        <img src="./img/pexels-athena-2582935.jpg" alt="hardware" class="card-img-top">
+       <div id="link-topo" class="d-flex justify-content-center">
+            <a href="#scroll"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </div>
+        <div class="container-fluid container-seções" id="container-gostos-pessoais" data-bs-spy="scroll" data-bs-target="#scroll" data-bs-offset="0" tabindex="0">
+            <h2 class="sub-titulos text-center">Gostos Pessoais</h2>
+            <div id="container-conteudo container-fluid">
+                <div class="row justify-content-center flex-wrap">
+                    <div class="card col-md-3">
+                        <div class="card-img-top" id="musica"></div>
                         <div class="card-body">
-                            <h3 class="card-title text-center">Hardware</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus accusamus ipsum, molestiae nam numquam enim debitis cupiditate nihil quas pariatur ut neque consequatur asperiores culpa! Fugiat ex in fugit.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/pexels-alex-andrews-271121-816608.jpg" alt="universo" class="card-img-top">
+                    <div class="card col-md-3">
+                        <div class="card-img-top" id="hardware"></div>
                         <div class="card-body">
-                            <h3 class="card-title text-center">Astronomia</h3>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis magnam eaque aperiam ex velit maxime non ab. Eaque repellat unde blanditiis odit quis expedita accusantium illum est, soluta minima sequi?</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/pexels-rkftr-4335795.jpg" alt="música" class="card-img-top">
+                    <div class="card col-md-3">
+                        <div class="card-img-top" id="universo"></div>
                         <div class="card-body">
-                            <h3 class="card-title text-center">Música</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit tempora in repellat amet quasi ipsam incidunt, sunt, consequatur itaque deserunt laboriosam adipisci neque, consectetur rerum autem assumenda enim. Nam.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/meu-amor.jpg" alt="minha namorada" class="card-img-top">
+                    <div class="card col-md-3">
+                        <div class="card-img-top" id="meu-amor"></div>
                         <div class="card-body">
-                            <h3 class="card-title text-center">Estar com meu amor</h3>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, impedit doloribus voluptas cum quae tempora deleniti similique voluptatum voluptates enim quia nemo a inventore cupiditate molestias quis, nihil eos tenetur.</p>
                         </div>
                     </div>
                 </div>
             </div>
-       </div>
+        </div>
     </main>
     <footer>
 
