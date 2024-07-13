@@ -49,7 +49,7 @@ body{
     font-weight: lighter;
     font-size: 2.3em;
 }
-.paragrafo-quem-sou{
+#paragrafo-quem-sou{
     font-size: 1.1em;
     margin-top: 1rem;
     line-height: 1.6em;
@@ -60,6 +60,7 @@ body{
 }
 #redes{
     list-style: none;
+    padding: 0;
 }
 #redes a{
     font-size: 2.3em;
@@ -72,7 +73,7 @@ body{
 }
 #link-topo{
     position: sticky;
-    top: 880px;
+    top: 20px;
     z-index: 1;
 }
 .bi-arrow-up-circle-fill{
@@ -110,6 +111,29 @@ body{
 }
 .card-text{
     color: rgb(170, 170, 170);
+    line-height: 1.6em;
+}
+#paragrafo-motivacoes{
     font-size: 1.1em;
     line-height: 1.6em;
+}
+/* footer */
+footer{
+    background-color: var(--cor-1);
+}
+#footer{
+    list-style: none;
+    padding: 0;
+}
+#footer a{
+    font-size: 2.3em;
+    color: var(--cor-2);
+    transition: .3s;
+}
+#footer a:hover{
+    font-size: 2.7em;
+    color: var(--cor-3);
+}
+footer p {
+    color: var(--cor-2);
 }
