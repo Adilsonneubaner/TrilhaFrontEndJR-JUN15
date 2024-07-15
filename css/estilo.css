@@ -49,7 +49,7 @@ body{
     font-weight: lighter;
     font-size: 2.3em;
 }
-#paragrafo-quem-sou{
+.paragrafo-quem-sou{
     font-size: 1.1em;
     margin-top: 1rem;
     line-height: 1.6em;
@@ -75,10 +75,21 @@ body{
     position: sticky;
     top: 20px;
     z-index: 1;
+    animation: arrow 1s infinite;
+}
+@keyframes arrow{
+   to{
+    transform: translateY(6px);
+   }
 }
 .bi-arrow-up-circle-fill{
     font-size: 2.5em;
     color: var(--cor-3);
+}
+.bi-arrow-up-circle-fill::before{
+    background-color: var(--cor-2);
+    border-radius: 50%;
+    border: 3px solid white;
 }
 #container-gostos-pessoais{
    background-color: var(--cor-1);
@@ -98,16 +109,16 @@ body{
     box-shadow: inset 0 0 15px 8px rgba(0, 0, 0, 0.527);
 }
 #musica{
-    background: url(../img/musica2.jpeg) no-repeat;
+    background: url(../img/musica.jpeg) no-repeat;
 }
 #hardware{
-    background: url(../img/hardware2.jpg) no-repeat;
+    background: url(../img/hardware.jpg) no-repeat;
 }
 #universo{
-    background: url(../img/universo2.jpeg) no-repeat;
+    background: url(../img/universo.jpeg) no-repeat;
 }
 #meu-amor{
-    background: url(../img/meu-amor2.jpg) no-repeat;
+    background: url(../img/meu-amor.jpg) no-repeat;
 }
 .card-text{
     color: rgb(170, 170, 170);
